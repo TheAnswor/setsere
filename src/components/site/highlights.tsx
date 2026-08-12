@@ -10,12 +10,8 @@ export function Highlights() {
             Highlights
           </p>
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-[2.75rem]">
-            Where our work speaks for itself
+            Fast Feature Delivery
           </h2>
-          <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Fast, dependable delivery across equipment supply, waste management and
-            specialist design &amp; manufacturing.
-          </p>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -43,7 +39,7 @@ export function Highlights() {
 
               {idx === 0 && (
                 <div className="mt-6 flex flex-wrap gap-2 border-t border-white/10 pt-5 lg:mt-auto">
-                  {["Cost savings", "Tight timeframe", "Quality assured"].map((chip) => (
+                  {["Cost savings", "Tight timeframe", "Quality products"].map((chip) => (
                     <span key={chip} className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.7rem] font-medium text-white/80">
                       {chip}
                     </span>

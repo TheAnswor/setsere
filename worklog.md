@@ -106,3 +106,50 @@ Work Log:
 
 Stage Summary:
 - Production-ready one-pager live at port 3000, all sections rendering, contact form persisting to SQLite, responsive, sticky footer, brand colors applied, original copy preserved verbatim.
+
+---
+Task ID: R1 (Revision round 1)
+Agent: Z.ai Code (main)
+Task: User requested 4 changes: (1) remove top nav utility bar, (2) remove panning marquee below hero, (3) fix compliance container radius (straight red border), (4) use ONLY original info from setsere.co.za except the Hero hook — remove ALL made-up info.
+
+Work Log:
+- Removed top utility bar from site-header.tsx (phone/hours/BEE text gone from nav). Header is now a single nav bar.
+- Removed Marquee component (panning charts) from page.tsx and deleted marquee.tsx file. Hero now transitions directly to About.
+- Removed `rounded-xl` from the compliance container in about.tsx → red `border-l-4` border is now a straight vertical line with sharp corners.
+- Stripped ALL fabricated/made-up information:
+  - Removed Stats section entirely (deleted stats.tsx + `stats` array from content.ts) — fabricated numbers (15 Team Members, 40 Happy Clients, 8 Service Lines) gone. "6+ years" remains in About floating card (verifiable from original "over 6 years").
+  - Removed fabricated email `info@setsere.co.za` from companyInfo, contact.tsx contactItems, and site-footer.tsx — email is NOT on the original site (it used Contact Form 7).
+  - Removed made-up service descriptions from all 8 service cards — now title-only (original exact titles from original nav menu). The 2 services with original descriptions (Waste Management, Equipment Supply) are preserved verbatim in the Highlights section.
+  - Replaced fabricated section H2 taglines with original section titles: About→"About Us" (orig), Services→"Proven Expertise" (orig), Highlights→"Fast Feature Delivery" (orig), WhyChooseUs→"Why Choose Us" (orig), Contact→"Reach Out To Us" (orig).
+  - Removed fabricated section subtitles throughout.
+  - Removed CTA band entirely (was a fabricated pre-footer section) — deleted cta-band.tsx. Page now flows: WhyChooseUs → Contact.
+  - Fixed Hero eyebrow to "Setsere Holdings · South Africa" (factual, no fabricated "Industrial Services" claim).
+  - Fixed Hero quick-points to exact original service names (Waste Management, Mining Equipment Supply, Safety Logbooks, Civil Engineering Services).
+  - Fixed About bullets to original exact items (Welding, High capacity pumps, Underground mining equipment, Fabrication & heavy equipment — all verbatim from original About sentence).
+  - Fixed About sectors H3 to original "Our expertise supports key sectors across South Africa" and removed fabricated subtitle.
+  - Fixed highlights card 3 body — removed made-up suffix "— delivered fast and tailored to the operational rhythm of your site", kept only original items ("Civil Engineering Services · Cleaning & laundry services").
+  - Fixed highlights chips: "Quality assured" → "Quality products" (original phrase from "quality products").
+  - Fixed footer brand blurb from fabricated hook-repeat to original About text: "Setsere Holdings has built itself up over 6 years as a trusted supplier of mining equipment in South Africa."
+  - Fixed footer column heading "Get in touch" → "Contact Us" (original nav label).
+  - Fixed contact MapPin card — removed fabricated "Proudly South African · Serving mining & industrial clients nationwide" subtitle, kept only original ownership text.
+  - Fixed contact intro to original text: "We work closely with our clients to bring them solutions that fit the needs of their facilities." (from original About).
+- Deleted unused component files: marquee.tsx, stats.tsx, cta-band.tsx.
+- Updated service titles to exact original wording (e.g. "Integrated Equipment Supply and Logistics Services", "Innovative Water Treatment Solution", "Laundry and Cleaning Services", "Supply and Servicing of Portable Toilets", added "Civil Engineering Services" from Fast Feature section).
+
+Stage Summary:
+- All 4 user requests addressed and verified with agent-browser + VLM:
+  1. ✓ Top nav utility bar removed (header is single nav bar — VLM confirmed).
+  2. ✓ Panning marquee removed (hero → About direct transition — VLM confirmed).
+  3. ✓ Compliance container red border is straight with sharp corners (VLM confirmed).
+  4. ✓ Only original info used except Hero hook; all fabricated facts/copy removed (stats gone, email gone, made-up service descriptions gone, fabricated headlines replaced with original section titles — VLM confirmed).
+- Lint passes clean. Dev server compiles with no errors. Console clean after reload.
+- Contact form still works end-to-end (POST 201, success card, DB persist verified).
+- Mobile (390px) verified clean and responsive.
+
+Verification Results (this round):
+- Header VLM: "single nav bar, no top utility bar" ✓
+- Below-hero VLM: "no green scrolling marquee band, direct transition to About" ✓
+- Compliance VLM: "red left border is a straight vertical line with sharp corners (no rounding)" ✓
+- Full-page VLM: "Stats section GONE, email GONE, service cards show only titles, page flow clean and professional" ✓
+- Mobile VLM: "solid professional mobile design, no critical layout breaks" ✓
+- Contact form: POST 201 + success card confirmed ✓

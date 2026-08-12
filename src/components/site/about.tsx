@@ -3,10 +3,10 @@ import { CheckCircle2 } from "lucide-react";
 import { aboutText, sectors, complianceText } from "@/lib/content";
 
 const aboutBullets = [
-  "Welding & fabrication",
-  "High-capacity pumps",
+  "Welding",
+  "High capacity pumps",
   "Underground mining equipment",
-  "Custom facility solutions",
+  "Fabrication & heavy equipment",
 ];
 
 export function About() {
@@ -52,10 +52,10 @@ export function About() {
           <div>
             <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-green">
               <span className="h-px w-8 bg-brand-green" />
-              About Setsere Holdings
+              Learn About Us
             </p>
             <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-[2.75rem]">
-              Engineering reliability into every mining operation we touch
+              About Us
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {aboutText}
@@ -70,7 +70,7 @@ export function About() {
               ))}
             </ul>
 
-            <div className="mt-7 rounded-xl border-l-4 border-brand-red bg-muted/60 p-4">
+            <div className="mt-7 border-l-4 border-brand-red bg-muted/60 p-4">
               <p className="text-sm font-semibold uppercase tracking-wide text-brand-red">
                 Compliance
               </p>
@@ -90,13 +90,9 @@ export function About() {
                 Our Expertise
               </p>
               <h3 className="mt-3 font-display text-2xl font-extrabold tracking-tight text-foreground sm:text-3xl">
-                Supporting key sectors across South Africa
+                Our expertise supports key sectors across South Africa
               </h3>
             </div>
-            <p className="max-w-sm text-sm text-muted-foreground">
-              Our expertise supports the industries that keep the country running —
-              from deep-level mining to public service delivery.
-            </p>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

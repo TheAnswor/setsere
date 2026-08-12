@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { companyInfo } from "@/lib/content";
 
 const heroPoints = [
+  "Waste Management",
   "Mining Equipment Supply",
-  "Fabrication & Civil Engineering",
-  "Waste & Fluid Management",
   "Safety Logbooks",
+  "Civil Engineering Services",
 ];
 
 export function Hero() {
@@ -45,7 +45,7 @@ export function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-red" />
             </span>
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/85">
-              South Africa · Mining &amp; Industrial Services
+              Setsere Holdings · South Africa
             </span>
           </div>
 

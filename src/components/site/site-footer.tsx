@@ -1,4 +1,4 @@
-import { Phone, Clock, Mail, Globe, Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
+import { Phone, Clock, Globe, Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
 import { companyInfo, navLinks, services } from "@/lib/content";
 
 const socialIcons: Record<string, typeof Facebook> = {
@@ -29,8 +29,8 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
-              Trusted with mining supplies for almost a decade. Equipment supply,
-              fabrication, waste management and facility services across South Africa.
+              Setsere Holdings has built itself up over 6 years as a trusted supplier
+              of mining equipment in South Africa.
             </p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2 text-xs font-medium text-white/80 ring-1 ring-white/10">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-green" />
@@ -73,19 +73,13 @@ export function SiteFooter() {
           {/* Contact */}
           <div className="lg:col-span-3">
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">
-              Get in touch
+              Contact Us
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <a href={companyInfo.phoneHref} className="flex items-center gap-2.5 text-white/70 transition-colors hover:text-brand-green">
                   <Phone className="h-4 w-4 text-brand-green" />
                   {companyInfo.phone}
-                </a>
-              </li>
-              <li>
-                <a href={companyInfo.emailHref} className="flex items-center gap-2.5 text-white/70 transition-colors hover:text-brand-green">
-                  <Mail className="h-4 w-4 text-brand-green" />
-                  {companyInfo.email}
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-white/70">

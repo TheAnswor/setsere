@@ -5,17 +5,12 @@ export function WhyChooseUs() {
     <section id="why-us" className="relative scroll-mt-24 bg-muted/40 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-green">
-            <span className="h-px w-8 bg-brand-green" />
+          <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-[2.75rem]">
             Why Choose Us
-            <span className="h-px w-8 bg-brand-green" />
-          </p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-[2.75rem]">
-            Built on trust, engineered for performance
           </h2>
-          <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Four reasons clients across South Africa rely on Setsere Holdings.
-          </p>
+          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-brand-green/30">
+            <div className="h-full w-1/2 rounded-full bg-brand-green" />
+          </div>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

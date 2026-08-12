@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Clock, Mail, Globe, MapPin, Loader2, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Clock, Globe, MapPin, Loader2, Send, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -70,7 +70,6 @@ export function Contact() {
 
   const contactItems = [
     { icon: Phone, label: "Call us", value: companyInfo.phone, href: companyInfo.phoneHref },
-    { icon: Mail, label: "Email us", value: companyInfo.email, href: companyInfo.emailHref },
     { icon: Clock, label: "Working hours", value: companyInfo.hours },
     { icon: Globe, label: "Website", value: companyInfo.website, href: "https://setsere.co.za/" },
   ];
@@ -86,11 +85,11 @@ export function Contact() {
               Contact Us
             </p>
             <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl">
-              Let&apos;s talk about your next project
+              Reach Out To Us
             </h2>
             <p className="mt-4 max-w-md text-base text-muted-foreground">
-              Tell us what you need — equipment supply, fabrication, waste management
-              or specialist design — and we&apos;ll get back to you fast.
+              We work closely with our clients to bring them solutions that fit the
+              needs of their facilities.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -120,14 +119,9 @@ export function Contact() {
 
             <div className="mt-6 flex items-start gap-3 rounded-xl border-l-4 border-brand-green bg-muted/50 p-4">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-green" />
-              <div>
-                <p className="text-sm font-semibold text-foreground">
-                  {companyInfo.ownership}
-                </p>
-                <p className="mt-0.5 text-xs text-muted-foreground">
-                  Proudly South African · Serving mining &amp; industrial clients nationwide
-                </p>
-              </div>
+              <p className="text-sm font-semibold text-foreground">
+                {companyInfo.ownership}
+              </p>
             </div>
           </div>
 

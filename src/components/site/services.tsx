@@ -12,7 +12,7 @@ export function Services() {
               Our Services
             </p>
             <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-[2.75rem]">
-              Proven expertise across mining &amp; industrial operations
+              Proven Expertise
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground md:text-right">
@@ -37,12 +37,9 @@ export function Services() {
               <span className="mt-5 block font-display text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground group-hover:text-brand-green/80">
                 0{idx + 1}
               </span>
-              <h3 className="mt-1 font-display text-lg font-bold text-foreground transition-colors duration-300 group-hover:text-white">
+              <h3 className="mt-2 font-display text-lg font-bold text-foreground transition-colors duration-300 group-hover:text-white">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70">
-                {service.description}
-              </p>
             </article>
           ))}
         </div>

@@ -50,58 +50,17 @@ export const sectors: Sector[] = [
 export type Service = {
   icon: LucideIcon;
   title: string;
-  description: string;
 };
 
 export const services: Service[] = [
-  {
-    icon: Recycle,
-    title: "Waste Management",
-    description:
-      "Protecting the environment, public health and supporting sustainable development through recycling and compliance.",
-  },
-  {
-    icon: Truck,
-    title: "Integrated Equipment Supply & Logistics",
-    description:
-      "Supply and delivery of high-quality mining equipment within tight timeframes at competitive market prices.",
-  },
-  {
-    icon: Toilet,
-    title: "Supply & Servicing of Portable Toilets",
-    description:
-      "Reliable sanitation solutions that keep remote and high-density sites compliant and operational.",
-  },
-  {
-    icon: Droplets,
-    title: "Total Fluid Management",
-    description:
-      "End-to-end handling of fluids that safeguards equipment life and site safety standards.",
-  },
-  {
-    icon: Shirt,
-    title: "Laundry & Cleaning Services",
-    description:
-      "Professional cleaning and laundry that maintains hygiene across mining and industrial facilities.",
-  },
-  {
-    icon: BookOpenCheck,
-    title: "Safety Logbooks",
-    description:
-      "Design & manufacturing of safety logbooks that keep your operations audit-ready at all times.",
-  },
-  {
-    icon: Wrench,
-    title: "Design & Manufacturing",
-    description:
-      "Civil engineering and fabrication services tailored to the demands of heavy industry.",
-  },
-  {
-    icon: FlaskConical,
-    title: "Innovative Water Treatment",
-    description:
-      "Sustainable water treatment solutions engineered for performance and environmental compliance.",
-  },
+  { icon: Recycle, title: "Waste Management" },
+  { icon: Truck, title: "Integrated Equipment Supply and Logistics Services" },
+  { icon: Toilet, title: "Supply and Servicing of Portable Toilets" },
+  { icon: Droplets, title: "Total Fluid Management" },
+  { icon: Shirt, title: "Laundry and Cleaning Services" },
+  { icon: BookOpenCheck, title: "Safety Logbooks" },
+  { icon: FlaskConical, title: "Innovative Water Treatment Solution" },
+  { icon: Wrench, title: "Civil Engineering Services" },
 ];
 
 export type Highlight = {
@@ -113,7 +72,7 @@ export type Highlight = {
 export const highlights: Highlight[] = [
   {
     tag: "Equipment Supply",
-    title: "Supply & delivery of different mining equipment",
+    title: "Supply and delivery of different mining equipment’s",
     body: "We successfully supplied high-quality equipment within a tight timeframe at a competitive market price, ultimately delivering cost savings for our clients. Our efficient service and quality products helped meet their needs effectively.",
   },
   {
@@ -124,7 +83,7 @@ export const highlights: Highlight[] = [
   {
     tag: "Fast Feature Delivery",
     title: "Design & manufacturing of safety logbooks",
-    body: "Civil Engineering Services, Cleaning & laundry services — delivered fast and tailored to the operational rhythm of your site.",
+    body: "Civil Engineering Services · Cleaning & laundry services",
   },
 ];
 
@@ -148,7 +107,7 @@ export const reasons: Reason[] = [
   {
     icon: Wrench,
     title: "Commitment to Quality",
-    body: "Our engineering team uses the latest technology and rigorous standards to ensure durable, high-performance results.",
+    body: "Our engineering team uses the latest technology and rigorous standards to ensure durable, high‑performance results.",
   },
   {
     icon: Globe2,
@@ -163,20 +122,11 @@ export const complianceText =
 export const aboutText =
   "Setsere Holding has built itself up over 6 years as a trusted supplier of mining equipment in South Africa, as well as key services for mining facilities that ensure the safety and reliability of equipment used. We work closely with our clients to bring them solutions that fit the needs of their facilities, whether they require welding, high capacity pumps, underground mining equipment, and more.";
 
-export const stats = [
-  { value: 6, suffix: "+", label: "Years In Business" },
-  { value: 15, suffix: "+", label: "Team Members" },
-  { value: 40, suffix: "+", label: "Happy Clients" },
-  { value: 8, suffix: "", label: "Service Lines" },
-];
-
 export const companyInfo = {
   name: "Setsere Holdings",
   phone: "079 609 1795",
   phoneHref: "tel:+27796091795",
   hours: "Mon – Fri: 08:00 – 17:00",
-  email: "info@setsere.co.za",
-  emailHref: "mailto:info@setsere.co.za",
   website: "setsere.co.za",
   ownership: "Black Youth female-owned | Level 1 BEE accredited",
   rights: "©2025 Setsere Holdings. All Rights Reserved.",

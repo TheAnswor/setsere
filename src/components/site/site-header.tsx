@@ -45,29 +45,6 @@ export function SiteHeader() {
       id="top"
       className="fixed inset-x-0 top-0 z-50 transition-all duration-300"
     >
-      {/* Top utility bar */}
-      <div
-        className={`hidden border-b border-white/10 bg-brand-navy text-white/80 transition-all duration-300 md:block ${
-          scrolled ? "max-h-0 overflow-hidden opacity-0" : "max-h-12 opacity-100"
-        }`}
-      >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-[0.8rem]">
-          <div className="flex items-center gap-6">
-            <a href={companyInfo.phoneHref} className="flex items-center gap-2 transition-colors hover:text-brand-green">
-              <Phone className="h-3.5 w-3.5 text-brand-green" />
-              <span className="font-medium">{companyInfo.phone}</span>
-            </a>
-            <span className="flex items-center gap-2">
-              <Clock className="h-3.5 w-3.5 text-brand-green" />
-              <span>{companyInfo.hours}</span>
-            </span>
-          </div>
-          <p className="text-[0.78rem] font-medium tracking-wide">
-            {companyInfo.ownership}
-          </p>
-        </div>
-      </div>
-
       {/* Main nav */}
       <div
         className={`transition-all duration-300 ${
