@@ -1,4 +1,4 @@
-import { Phone, Clock, Globe, Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
+import { Phone, Clock, Mail, Globe, Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
 import { companyInfo, navLinks, services } from "@/lib/content";
 
 const socialIcons: Record<string, typeof Facebook> = {
@@ -80,6 +80,12 @@ export function SiteFooter() {
                 <a href={companyInfo.phoneHref} className="flex items-center gap-2.5 text-white/70 transition-colors hover:text-brand-green">
                   <Phone className="h-4 w-4 text-brand-green" />
                   {companyInfo.phone}
+                </a>
+              </li>
+              <li>
+                <a href={companyInfo.emailHref} className="flex items-center gap-2.5 text-white/70 transition-colors hover:text-brand-green">
+                  <Mail className="h-4 w-4 text-brand-green" />
+                  {companyInfo.email}
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-white/70">

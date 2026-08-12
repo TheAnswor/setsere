@@ -126,6 +126,8 @@ export const companyInfo = {
   name: "Setsere Holdings",
   phone: "079 609 1795",
   phoneHref: "tel:+27796091795",
+  email: "info@setsere.co.za",
+  emailHref: "mailto:info@setsere.co.za",
   hours: "Mon – Fri: 08:00 – 17:00",
   website: "setsere.co.za",
   ownership: "Black Youth female-owned | Level 1 BEE accredited",
