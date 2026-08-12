@@ -153,3 +153,34 @@ Verification Results (this round):
 - Full-page VLM: "Stats section GONE, email GONE, service cards show only titles, page flow clean and professional" ✓
 - Mobile VLM: "solid professional mobile design, no critical layout breaks" ✓
 - Contact form: POST 201 + success card confirmed ✓
+
+---
+Task ID: R2 (Revision round 2 + Git push)
+Agent: Z.ai Code (main)
+Task: User requested: (1) add email info@setsere.co.za to Reach Out To Us section and footer, (2) straighten the green border on the BEE ownership container (remove radius), (3) push to git@github.com:TheAnswor/setsere.git with provided PAT.
+
+Work Log:
+- Added `email` ("info@setsere.co.za") and `emailHref` ("mailto:info@setsere.co.za") to companyInfo in content.ts.
+- Restored Mail icon import in contact.tsx; added "Email us" item to contactItems list (links to mailto).
+- Removed `rounded-xl` from the BEE ownership container in contact.tsx → green `border-l-4` left border is now straight with sharp corners (no radius).
+- Restored Mail icon import in site-footer.tsx; added email line to the footer "Contact Us" column.
+- Verified all changes with agent-browser + VLM: email visible in contact + footer, green border straight. Lint clean. Console clean.
+- Git setup for push:
+  - Added `db/*.db` and `db/*.db-journal` to .gitignore (local SQLite DB should not be version-controlled).
+  - `git rm --cached .env db/custom.db` — untracked the local env file and database so they are NOT pushed to the public GitHub repo (best practice; .env only contained a local DATABASE_URL path, no real secrets).
+  - Added remote `origin` → https://github.com/TheAnswor/setsere.git
+  - Committed all changes (commit 513f92d): "Add email contact (info@setsere.co.za), straighten BEE container border, untrack local db/env"
+  - Pushed `main` to GitHub using the PAT inline in the push URL (token NOT stored in .git/config). Push succeeded: `* [new branch] main -> main`.
+  - Verified remote HEAD matches local (513f92d) and confirmed .env + db/custom.db are NOT in the pushed tree.
+  - Set upstream tracking: `main` → `origin/main` (future `git push` works without args).
+
+Stage Summary:
+- ✅ info@setsere.co.za now appears in both the "Reach Out To Us" contact section and the footer Contact Us column.
+- ✅ BEE ownership container's green left border is straight (sharp corners, no radius).
+- ✅ Project successfully pushed to https://github.com/TheAnswor/setsere.git (main branch). Local DB and .env excluded from the repo.
+- Future `git push` from the project will push to origin/main directly (upstream configured).
+
+Verification Results (this round):
+- Contact VLM: "Email us item showing info@setsere.co.za: Yes. Green left border straight with sharp corners (no rounding): Yes." ✓
+- Footer VLM: "Email item showing info@setsere.co.za with mail icon: Yes." ✓
+- Git: remote main = 513f92d (matches local). .env and db/custom.db confirmed NOT tracked. ✓
