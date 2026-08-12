@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Clock, Mail, Globe, MapPin, Loader2, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Clock, Mail, MapPin, Loader2, Send, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -72,7 +72,6 @@ export function Contact() {
     { icon: Phone, label: "Call us", value: companyInfo.phone, href: companyInfo.phoneHref },
     { icon: Mail, label: "Email us", value: companyInfo.email, href: companyInfo.emailHref },
     { icon: Clock, label: "Working hours", value: companyInfo.hours },
-    { icon: Globe, label: "Website", value: companyInfo.website, href: "https://setsere.co.za/" },
   ];
 
   return (
