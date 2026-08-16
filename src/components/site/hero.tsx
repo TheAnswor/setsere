@@ -83,7 +83,7 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button asChild size="lg" className="bg-brand-green text-white shadow-brand hover:bg-brand-green-soft">
+            <Button asChild size="lg" className="bg-primary text-white shadow-brand hover:bg-primary/90">
               <a href="#contact">
                 Request a Quote
                 <ArrowRight className="ml-2 h-4.5 w-4.5" />

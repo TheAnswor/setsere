@@ -73,7 +73,7 @@ export function SiteHeader() {
             <Button
               asChild
               size="sm"
-              className="hidden bg-brand-green text-white shadow-brand hover:bg-brand-green-soft sm:inline-flex"
+              className="hidden bg-primary text-white shadow-brand hover:bg-primary/90 sm:inline-flex"
             >
               <a href="#contact">
                 Get a Quote
@@ -120,7 +120,7 @@ export function SiteHeader() {
                   ))}
                 </nav>
                 <div className="mt-auto space-y-3 border-t border-white/10 px-5 py-5">
-                  <Button asChild className="w-full bg-brand-green text-white hover:bg-brand-green-soft">
+                  <Button asChild className="w-full bg-primary text-white hover:bg-primary/90">
                     <a href="#contact">Get a Quote</a>
                   </Button>
                   <a href={companyInfo.phoneHref} className="flex items-center gap-2 text-sm text-white/80">

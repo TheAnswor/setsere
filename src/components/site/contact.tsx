@@ -200,7 +200,7 @@ export function Contact() {
                     type="submit"
                     size="lg"
                     disabled={submitting}
-                    className="w-full bg-brand-green text-white shadow-brand hover:bg-brand-green-soft"
+                    className="w-full bg-primary text-white shadow-brand hover:bg-primary/90"
                   >
                     {submitting ? (
                       <>
